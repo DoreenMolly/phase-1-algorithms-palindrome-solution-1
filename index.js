@@ -1,16 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
+  let copiedWord = [...word]
+  let reversed = copiedWord.reverse().join('')
+  return reversed === word;
+  }
+  console.log(isPalindrome('racecar'), isPalindrome('dogs'))
+  /* 
+    Add your pseudocode here
+  */
+  // change string to an array because javascript cannot reverse a string
+  //compare the original string with the reversed string
+  //change array back to string
+  //join the string
 
-/* 
-  Add your pseudocode here
-*/
 
-/*
-  Add written explanation of your solution here
-*/
-
-// You can run `node index.js` to view these console logs
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
